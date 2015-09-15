@@ -1,0 +1,107 @@
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
+
+\documentclass[margin]{res} 
+% the margin option causes section titles to appear to the left of body text 
+\usepackage{hyperref}
+\usepackage{changepage}
+\textwidth=5.2in % increase textwidth to get smaller right margin
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+
+\makeatletter
+\def\@tablebox#1{\begin{tabular}[t]{@{}c@{\extracolsep{\fill}}}#1\end{tabular}}
+\makeatother
+
+\begin{document} 
+
+\name{Justin Neill Blythe\\[12pt]} % the \\[12pt] adds a blank line after name
+
+\address{ Atlanta, GA \\
+          jblythe29@gmail.com \\ (404)-788-3518 }
+
+ 
+\begin{resume} 
+
+\section{Summary}
+Specific experience in organizing, problem solving, and communicating status, progress and timely
+completion of assigned projects; demonstrated proficiency in prioritizing tasks to meet deadlines;
+adapts readily to new challenges; grasps and applies new procedures quickly; highly-motivated,
+detail-oriented team player.
+
+\section{Objective} 
+To obtain an entry-level position as a software engineer where my computational and
+problem solving skills combined with a strong mathematical background will be applied.
+
+\section{Education} 
+B.S. in Physics, Georgia Institute of Technology, Atlanta, GA, May 2013 \\
+GPA 3.7 in major, 3.1 overall
+
+\section{Work \\Experience}
+ {\bf Graduate Teaching Assistant,} Georgia Institute of Technology, Atlanta, GA \\  Fall 2013 - May 2015
+ \begin{itemize} \itemsep -2pt  % reduce space between items
+ \item Taught Physics I and Physics II labs; received high remarks from most students in previous semesters
+ \item Mentor and tutor students enrolled in Physics I and II in the Clough Undergraduate Learning Commons
+ \item Proctor and grade exams
+ \end{itemize}
+
+ {\bf Intern,} AnswerRocket, Atlanta, GA \hfill Summer 2014
+ \begin{itemize} \itemsep -2pt  % reduce space between items
+ \item Project initiated to design and implement a Python-based automated regression model
+ \item Program design was to pull from the Git server when a new version of the code was uploaded; if errors
+       detected, an email would be sent to the quality control supervisor
+ \item Studies of results over time indicated the program should have
+       been implemented server-side allowing submission of accurate error reports
+ \end{itemize}
+
+
+\section{Research}
+ {\bf Student Researcher,} Naval Research Lab, Washington, D.C. \hfill Summer  2013
+ \begin{itemize} \itemsep -2pt  % reduce space between items
+ \item Used the Long Wavelength Array 1 (LWA-1) in New Mexico to observe 
+       approximately 80 pulsars remotely
+ \item Studied pulse broadening in pulsar B0950+08, allowing us to approximate 
+       the sensitivity of LWA-1
+ \item Pulsar search and initial analysis was done by PRESTO (written in C); 
+       further analysis was done in Python
+ \item Reference: \url{http://arxiv.org/abs/1410.7422}
+ \end{itemize}
+
+ {\bf Undergraduate Researcher,} Center for Relativistic Astrophysics, Atlanta, GA \\  Fall 2012 - Spring 2013
+ \begin{itemize} \itemsep -2pt %reduce space between items
+ \item Built a computational model of radiative transfer in neutron star atmospheres assuming local thermodynamic
+       and radiative equilibrium
+ \item The front-end was written in Python and the heavy calculations were carried out in C 
+       functions for speed
+ \item Coding style based off the paper ``Best Practices for Scientific Computing''
+ \item SCons used to build the program; Bitbucket used for a versioning system; Doxygen used to document the program
+ \item Less than one percent convergence achieved with proper boundary conditions
+ \end{itemize}
+
+\section{Academic \\ Honors} 
+Dean's List of Distinguished Students, Georgia Institute of Technology, all semesters \\
+Graduated Highest Honors, Georgia Institute of Technology \\
+Certificate in Astrophysics, Georgia Institute of Technology \\
+Naval Research Enterprise Internship Program Fellowship
+
+\section{Personal \\ Interests/ \\Activities}
+%Adult Co-ed Soccer League \\
+Backpacking and Camping \\
+Golf \\
+Soccer \\
+Xbox
+
+% Tabulate Computer Skills; p{3in} defines paragraph 3 inches wide
+\section{Computer \\ Skills}
+   \begin{tabular}{l p{3in}}
+    \underline{Languages:} & Bash, C, Fortran, \LaTeX, Python \\
+    \underline{Software:} & Mathematica, MATLAB, Vim, Git \\
+    \underline{Platform:} & Macintosh (Mac), Ubuntu, Windows \\
+    \underline{Web Framework:} & Django (beginner) 
+   \end{tabular}
+
+\section{GitHub}
+\url{https://github.com/jbbskinny} \\ \\
+
+\end{resume} 
+\end{document} 
